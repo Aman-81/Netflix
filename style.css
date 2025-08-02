@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(bgimage.jpg);
+    height: 80vh;
+    position: relative;
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw); */
+    height: 80vh;
+
+    
+   
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.44;
+    top: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    max-width: 80vw;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    
+}
+nav img{
+    height: 5rem;
+     position: relative;
+}
+nav button{
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    font-weight: bolder;
+    position: relative;
+    
+    
+}
+
+
+.hero {
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 10;
+    
+    padding:  30px;
+}
+.hero .first{
+ font-weight: bold;
+ font-size: 45px;
+ max-width: 70vw;
+}
+.hero .second{
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.hero .third{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0.8rem;
+}
+.hero .emailbox{
+    background-color:rgba(0,0, 0, 0.8);
+    padding: 1rem;
+    height: 6vh;
+    width: 28vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font: 50px;
+    font-weight:bolder ;
+}
+.hero button{
+    background-color: rgb(225, 4, 4);
+    padding: 7px 9px;
+    color: white;
+    border-radius: 5px;
+    margin: 0.8rem;
+    border: none;
+    z-index: 10;
+    
+}
+.seperation{
+   height: 5px;
+   background-color: grey; 
+}
+.moveis{
+    margin-top: 5px;
+}
+.movies p{
+
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top:2rem ;
+    margin-bottom: 2rem;
+ }
+/* .movie{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.movie img{
+    height: 20rem;
+    width: 35rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+   border-radius: 5px;
+   border: 1px solid grey;
+    
+}
+.movie img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 5px 10px wheat;
+} */
+.movie {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+    
+    /* scroll-behavior: smooth; */
+    /* position: relative;
+    z-index: 1; */
+}
+
+.movie::-webkit-scrollbar {
+    display: none; 
+}
+
+.movie img {
+    height: 20rem;
+    width: 15rem;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid grey;
+    /* flex-shrink: 0;
+    z-index: 1;
+    position: relative; */
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+    z-index: 5; 
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+ .freq{
+    margin-top: 32rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 2rem;
+ }
+ .freq h2{
+    font-weight: bolder;
+    color: white;
+    margin-bottom:1rem ;
+    text-align: center;
+    font-size:48px ;
+ }
+.faqbox{
+    background-color: rgba(255, 255, 255,0.1 );
+    display: flex;
+    padding: 14px;
+    color: white;
+    width: 95vw;
+    max-width: 100%;
+    font-weight: bolder;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    
+}
+
+.faqbox img{
+    height: 1rem;
+    width: 1rem;
+}
+.faqbox:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+.e-mail{
+    display: flex;
+    
+    justify-content: center;
+     justify-content: baseline;
+}
+.e-mail .emailbox{
+    background-color:rgba(128,128, 128, 0.2);
+    padding: 1.5rem;
+    height: 10vh;
+    width: 28vw;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font: 50px;
+    font-size: 20px;
+}
+.e-mail button{
+    background-color: rgb(225, 4, 4);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 30px;
+    margin: 0.8rem;
+    border: none;
+    z-index: 10;
+    height: 8vh;
+}
+.footer {
+    background-color: #111;
+    color: #757575;
+    padding: 3rem 10vw;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-lang select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #757575;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.footer-brand {
+    margin-top: 1.5rem;
+}
